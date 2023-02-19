@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#datepicker {
+  background: rgba(190, 190, 190, 0.05);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(190, 190, 190, 0.025);
+  font-family: "Audiowide", cursive;
+  width: 150px;
+  height: 30px;
+  border-radius: 6px;
+}

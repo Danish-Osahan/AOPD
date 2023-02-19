@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+body {
+  background-image: url("../../img/bg4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  font-family: "Audiowide", cursive;
+}
+
+#main_container {
+  margin-top: 50px;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding: auto auto;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 8px;
+  margin-right: 8px;
+  max-width: 600px;
+  background: rgba(116, 115, 115, 0.4);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(116, 115, 115, 0.2);
+  border-radius: 14px;
+}
+
+#text {
+  text-align: center;
+  /* font-family: "Audiowide", cursive; */
+}
+#button {
+  width: 200px;
+}
+
+.cssbuttons-io-button {
+  /* background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4); */
+  margin-bottom: 12px;
+
+  background: #796e74;
+  background: -webkit-linear-gradient(244deg, #796e74 0%, #0e697c 100%);
+  background: linear-gradient(244deg, #796e74 0%, #0e697c 100%);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+  /* background: white; */
+  background: rgba(116, 115, 115, 0.4);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #e86569;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  /* color: #8a3b3e; */
+  color: white;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
